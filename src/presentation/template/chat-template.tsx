@@ -30,7 +30,7 @@ export const ChatTemplate = () => {
         <div className="grid grid-cols-12 gap-y-2">
 
           {/* Bienvenida */}
-          <GptMessage text="Hola, puedes ecribir tu texto en español y te ayudo con las correctiones" />
+          <GptMessage text="Hola, puedes ecribir tu texto en español y te ayudo con las correcciones" />
 
           {
             messages.map( (message, index) => (
