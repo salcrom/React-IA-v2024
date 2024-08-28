@@ -17,7 +17,6 @@ export const orthographyUseCase = async( prompt: string ) => {
             if ( !resp.ok ) throw new Error('No se pudo realizar la corrección')
 
             const data = await resp.json() as OrthographyResponse;
-            
 
             return {
                 ok: true,

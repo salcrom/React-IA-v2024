@@ -71,8 +71,6 @@ export const OrthographyPage = () => {
               </div>
             )
           }
-
-    
         </div>
       </div>
 
@@ -81,8 +79,6 @@ export const OrthographyPage = () => {
         placeholder='Escribe aquí lo que deseas'
         disableCorrections
       />
-      
-
     </div>
   )
 }

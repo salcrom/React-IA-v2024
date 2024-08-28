@@ -11,6 +11,10 @@ interface Message {
 
 export const ChatTemplate = () => {
 
+  const [isLoading, setIsLoading] = useState(false)
+  const [messages, setMessages] = useState<Message[]>([])
+
+  
   const handlePost = async( text: string) => {
 
     setIsLoading(true)
@@ -22,8 +26,6 @@ export const ChatTemplate = () => {
     // TODO: Añadir el mensaje de isGPT en true
   }
 
-  const [isLoading, setIsLoading] = useState(false)
-  const [messages, setMessages] = useState<Message[]>([])
   return (
     <div className="chat-container">
       <div className="chat-messages">
