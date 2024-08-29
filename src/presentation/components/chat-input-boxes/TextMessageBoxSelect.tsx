@@ -21,6 +21,7 @@ export const TextMessageBoxSelect = ({ onSendMessage, placeholder, disableCorrec
     const handleSendMessage = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if ( message.trim().length === 0 ) return;
+        if ( selectedOption === '' ) return;
 
         onSendMessage( message, selectedOption )
         setMessage('')
